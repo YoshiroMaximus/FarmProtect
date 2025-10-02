@@ -1,7 +1,9 @@
 name: FarmProtect
 version: '${project.version}'
 main: com.jjkay03.farmprotect.FarmProtect
+
 api-version: '1.21'
+folia-supported: true
 
 author: "jjkay03"
 website: https://github.com/jjkay03/FarmProtect
