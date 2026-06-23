@@ -9,3 +9,21 @@ author: "jjkay03"
 website: https://github.com/jjkay03/FarmProtect
 description: "Protect your farmland from being trampled."
 
+# Loaded at runtime via Paper's library loader instead of shading
+libraries:
+  - org.jetbrains.kotlin:kotlin-stdlib:2.4.0
+
+commands:
+  farmprotect:
+    description: FarmProtect admin command.
+    usage: /farmprotect reload
+    permission: farmprotect.admin
+    aliases: [fp]
+
+permissions:
+  farmprotect.bypass:
+    description: Players with this permission can still trample farmland.
+    default: false
+  farmprotect.admin:
+    description: Allows use of /farmprotect (reload).
+    default: op

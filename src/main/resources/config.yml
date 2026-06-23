@@ -1,0 +1,7 @@
+# Reload with /farmprotect reload
+
+protect-from-players: true
+protect-from-mobs: true
+
+# Worlds where protection is off (case-insensitive)
+disabled-worlds: []
