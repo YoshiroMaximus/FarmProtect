@@ -20,7 +20,6 @@
 
   <build>
     <plugins>
-      <!-- Kotlin is the only source language; let it own compile/test-compile. -->
       <plugin>
         <groupId>org.jetbrains.kotlin</groupId>
         <artifactId>kotlin-maven-plugin</artifactId>
@@ -68,11 +67,6 @@
       <version>${paper.version}</version>
       <scope>provided</scope>
     </dependency>
-    <!--
-      kotlin-stdlib is NOT shaded into the jar. Paper downloads it at runtime via the
-      `libraries:` block in plugin.yml, keeping the plugin jar tiny (a few KB).
-      It is `provided` here purely so the code compiles against it.
-    -->
     <dependency>
       <groupId>org.jetbrains.kotlin</groupId>
       <artifactId>kotlin-stdlib</artifactId>
